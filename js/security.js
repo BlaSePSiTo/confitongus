@@ -1,0 +1,2 @@
+console.log('%c Detente! ', 'background: #fff; color: #bada55; font-size: 35px;');
+console.log('%c Si deseas ejecutar código que no conoces. NO LO EJECUTES. Puedes sufrir un ataque SELF-XSS ', 'background: #fff; color: #000; font-size: 19px;');
