@@ -32,7 +32,7 @@ body {
       z-index: 1;
     }
     
-    nav {
+    header nav {
       display: inline-block;
     }
     
@@ -81,7 +81,7 @@ body {
   
     }
 
-    ul {
+   header nav ul {
       padding: 0 15px 0 0;
     }
   
@@ -160,7 +160,7 @@ body {
 
   .close {
     float: right;
-    font-size: 25px;
+    font-size: 32px;
     cursor: pointer;
   }
 
@@ -189,22 +189,22 @@ body {
         margin: 0 auto;
     }
 
-    ul li {
+    header ul li {
         width: 100%;
         padding: 15px;
         text-align: left;
       }
     
-      header li:hover {
+      header ul li:hover {
         border-bottom: none;
       }
     
-      ul li a {
+      header ul li a {
         color: #fff;
         padding: 2px;
       }
     
-      ul li a:hover {
+      header ul li a:hover {
         border-bottom: 3px solid #000;
       }
     
@@ -213,11 +213,11 @@ body {
         float: right;
       }
     
-      nav ul {
+      header nav ul {
       display: none;
       }
 
-      nav {
+      header nav {
           display: block;
       }
     
@@ -235,7 +235,7 @@ body {
       .sidebar-content a {
         text-align: center;
         padding: 8px;
-        
+        border: none;
       }
 
       .categories-nav li a::before {
@@ -255,5 +255,9 @@ body {
         width: 60%;
         text-align: center;
         list-style: none;
+      }
+
+      .categories-nav li {
+        padding: 10px;
       }
   }
