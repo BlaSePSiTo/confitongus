@@ -168,6 +168,17 @@ body {
     list-style: none;
   }
 
+  .line-product hr {
+    width: 80%;
+    border: 1px solid var(--color-pink);
+    margin: 0 auto;
+  }
+
+  .line-product h2 {
+    text-align: center;
+    color: #444444;
+  }
+
   @media (max-width: 768px) {
         #title-header {
             display: inline-flex;
