@@ -1,6 +1,6 @@
 :root {
-    --color-pink-hover: #e99090;
-    --color-pink: #fa8383;
+    --color-pink-hover: #faaaaa;
+    --color-pink: #faaaaa;
 }
 
 * {
@@ -10,14 +10,16 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: whitesmoke;
+    height: auto;
 }
 
 .container {
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
+    min-height: calc(100% - 4rem);
 }
 
 header {
@@ -46,15 +48,11 @@ header li:hover {
 
 header li a,
 header li p {
-    color: #fafafa;
+    color: #444444;
     text-decoration: none;
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
-}
-
-header li a:hover {
-    color: #dbdbdd;
 }
 
 .title-header {
@@ -118,7 +116,7 @@ header nav ul {
 }
 
 .fill {
-    padding: 10px;
+    padding: 0 0 10px 10px;
 }
 
 .img-card {
@@ -138,7 +136,7 @@ header nav ul {
 #sidebar {
     width: 200px;
     background: #fff;
-    position: absolute;
+    position: fixed;
     height: 100%;
     top: 0;
     left: -200px;
@@ -182,6 +180,53 @@ header nav ul {
     text-align: center;
     color: #444444;
 }
+
+#description span,
+#description p {
+    display: inline-block;
+}
+
+.fill h4 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#description span {
+    color: var(--color-pink);
+    background-color: #fae8f3;
+    padding: 1px 3px 1px 3px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#description p {
+    font-size: 18px;
+    color: rgb(77, 77, 77);
+    font-weight: 600;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #e2e2e2;
+    padding: 18px;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* dark mode */
+
+header.dark {
+    background-color: #a34141;
+}
+
+
+/* media queries */
 
 @media (max-width: 1024px) {
     .card {
