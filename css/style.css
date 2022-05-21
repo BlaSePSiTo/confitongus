@@ -62,7 +62,7 @@ header li p {
     padding: 14px 2px;
     font-size: 27px;
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
 }
 
 .img-header {
@@ -218,6 +218,11 @@ footer p {
     text-align: center;
 }
 
+#qr-img {
+    width: 100%;
+    max-width: 400px;
+}
+
 
 /* dark mode */
 
@@ -235,6 +240,10 @@ header.dark {
 }
 
 @media (max-width: 768px) {
+    #qr-img {
+        width: 100%;
+        max-width: 400px;
+    }
     #title-header {
         display: inline-flex;
     }
@@ -312,5 +321,8 @@ header.dark {
     }
     .categories-nav li {
         padding: 10px;
+    }
+    #qr-img {
+        width: 100%;
     }
 }
